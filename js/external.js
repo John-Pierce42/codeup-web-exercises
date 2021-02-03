@@ -8,6 +8,7 @@ alert("Welcome to my Website");
 //prompt
 var user = prompt("What is you favorite color?");
 alert("Great " + user + " is my favorite color too");
+
 //exercise 3
 var lm = prompt("How many days did you rent Little Mermaid?");
 alert("you rented Little Mermaid for " + lm + " days.");
@@ -35,13 +36,15 @@ var facebookHour = prompt("How many hour did you work at Facebook?");
 var facebookPay = facebookRate * facebookHour;
 alert("you made $ " + facebookPay);
 
-var classSize = confirm("Is the class full?");
-var classConflict = confirm("Are there schedule conflict?");
-alert( "You are able to enroll " + (classSize && classConflict));
+ var classSize = confirm("Is the class full?");
+ var classConflict = confirm("Are there schedule conflict?");
+ alert( "You are able to enroll: " + (!classSize && !classConflict));
 
+// Note to self: confirm returns a true or false statement so make sure your wording your variable and string for confirm and alert correctly.
+var personBought2 = confirm("Did you buy more than two items?");
+var isOfferValid = confirm("has the offer valid?");
+var premiumMember = confirm("Are You a premium member?");
 
-var personBought2 = true;
-var offerExpired = false;
-confirm("Are you a Premium member?");
-alert("Do you ")
+var canUserUseOffer = (personBought2 || premiumMember) && isOfferValid;
 
+alert("you can use this offer: " + canUserUseOffer + " .");
