@@ -9,10 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
     function sayHello(name) {
-        return console.log("Hello, " + name + "!");
+        return "Hello, " + name + "!";
     };
-    sayHello("John")
-/**
+    console.log(sayHello("John"));
+    /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
  * Store the result of the function call in a variable named 'helloMessage'.
@@ -28,12 +28,12 @@
  * console.
  */
     var myName = "John";
-    sayHello(myName);
+    console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
-
+    var random = Math.floor((Math.random() * 3) + 1);
+    console.log(random);
 /**
  * TODO:
  * Create a function called 'isTwo' that takes a number as a parameter.
@@ -67,7 +67,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
     function calculateTip (tip, bill) {
-        return  tip * bill;
+        return  (tip / 100) * bill;
     }
 /**
  * TODO:
@@ -77,9 +77,9 @@ var random = Math.floor((Math.random() * 3) + 1);
  */
     var totalBill = parseInt(prompt("What is your bill?"));
     var totalTip = parseInt(prompt("What % tip will you pay?"));
-    console.log(calculateTip(totalTip / 100, totalBill));
+    console.log(calculateTip(totalTip, totalBill));
 
-     alert("This is your tip you should pay: " + calculateTip(totalTip / 100, totalBill));
+     alert("This is your tip you should pay: " + calculateTip(totalTip, totalBill));
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
