@@ -25,11 +25,11 @@
 //         } else if (name === "red") {
 //             return " Strawberries are red.";
 //         } else {
-//             return "I dont know anything about cyan."
+//             return "I dont know anything about cyan.";
 //         }
 // }
-
-// console.log(analyzeColor("red"));
+//
+// console.log(analyzeColor("blue"));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -144,8 +144,38 @@
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
 var chooseNum = confirm("would you like to enter a number?");
- // var userNum = prompt("which number?");
+// var notNumber = alert("That's NOT a number.");
+    if(chooseNum === true) {
+        var userNumber = prompt("which number?");
+
+        if (userNumber % 2 === 0) {
+            alert(userNumber + ". This number is even!");
+        } else {
+            alert(userNumber + ". This number is odd!");
+        }
+        if (chooseNum === true) {
+            alert("Your number Plus 100 is " + (100 + Number(userNumber)) + "!");
+        }
+        if(userNumber >= 1){
+         alert("Your number is positive!");
+        } else if(userNumber <= 0) {
+         alert("Your number is negative!");
+        }
+    }
+
+
+
+
+// var oddOrEven = alert("You Number is " + "!");
+// var plusOneHun = alert("Your Number PLUS 100 is " + "!");
+// var positiveOrNegative = alert("Your Number is " + "!");
+
+
+
+// var chooseNum = confirm("would you like to enter a number?");
+ // c
 
 // switch (((((chooseNum === true) || chooseNum % 2 === 0)|| chooseNum >= 1) || chooseNum >= 0)){
 //     case true:
@@ -164,7 +194,7 @@ var chooseNum = confirm("would you like to enter a number?");
 //         alert("Your number is negative!");
 //     default:
 //         alert("That's not a number.");
-}
+// }
 
 // var chooseNum = confirm("would you like to enter a number?");
 // function chooseNumber(w) {
@@ -184,41 +214,41 @@ var chooseNum = confirm("would you like to enter a number?");
 
 
 
-//  var userPick = confirm("would you like to enter a number?");
-// // var userNumber = prompt("which number?");
+//   var userPick = confirm("would you like to enter a number?");
+//   // var userNumber = null;
 //
-//  function chooseNumber(w) {
-//      if (w === true) {
+//  function chooseNumber() {
+//      if (userPick === true) {
 //          prompt("which number?")
 //      } else {
 //          return alert("That is NOT a number!");
 //      }
 //  }
 //
-// // function numberIsOddOrEven(x){
-//     if( w % 2 === 0) {
+//  function numberIsOddOrEven(x){
+//     if( x % 2 !== 0) {
 //         alert("This number is even!");
 //     }  else {
 //         alert("This number is odd!");
-//     // }
+//      }
 // }
 //
-// // function numberPlusHundred(y){
-//       alert("Your number Plus 100 is " + (w + 100) + "!" );
+//  function numberPlusHundred(y){
+//       alert("Your number Plus 100 is " + (y + 100) + "!" );
 //
-// // }
-// // function isPositiveOrNegative(z){
-//     if(w >= 1){
+//  }
+//  function isPositiveOrNegative(z){
+//     if(z >= 1){
 //         alert("Your number is positive!");
 //     } else if(z <= 0) {
 //         alert("Your number is negative!");
 //      }
-// // }
+//
 // }
-//  console.log(chooseNumber(userPick));
-//  console.log(numberIsOddOrEven(userNumber));
-// console.log(numberPlusHundred(Number(userNumber)));
-// console.log(isPositiveOrNegative(userNumber));
+//  chooseNumber();
+//   numberIsOddOrEven();
+// numberPlusHundred(Number());
+// isPositiveOrNegative();
 
 
 //    if(userNumber %= 2) {
