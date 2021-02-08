@@ -19,57 +19,60 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-//     function analyzeColor(name) {
-//         if(name === "blue") {
-//             return name + " is the color of the sky.";
-//         } else if (name === "red") {
-//             return " Strawberries are red.";
-//         } else {
-//             return "I dont know anything about cyan.";
-//         }
-// }
-//
-// console.log(analyzeColor("blue"));
+    function analyzeColor(color) {
+        if(color === "blue") {
+            return "blue is the color of the sky.";
+        } else if (color === "red") {
+            return " Strawberries are red.";
+        } else {
+            return "I dont know anything about " + color + ".";
+        }
+}
+
+console.log(analyzeColor("green"));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-// console.log(analyzeColor(randomColor));
+console.log(analyzeColor(randomColor));
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
 // var colorName = randomColor;
-//     switch (colorName) {
-//         case"blue":
-//             console.log(colorName + " is the color of the sky.");
-//             break;
-//         case "red" :
-//             console.log(" Strawberries are red.");
-//             break;
-//         default:
-//             console.log("I dont know anything about cyan.");
-//             break;
 
-    // }
+function switchAnalyzeColor (color) {
+    switch (color) {
+        case"blue":
+            console.log("blue is the color of the sky.");
+            return
+        case "red" :
+            console.log(" Strawberries are red.");
+            return
+        default:
+            console.log("I dont know anything about " + color + ".");
+            break;
+
+    }
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-    // var userColor = prompt("What is you favorite color?");
-    // analyzeColor(userColor);
-    // alert(analyzeColor(userColor));
+    var userColor = prompt("What is you favorite color?");
+    // switchAnalyzeColor(userColor);
+    alert(switchAnalyzeColor(userColor));
 
 /* ########################################################################## */
 
@@ -94,28 +97,28 @@
  */
 
 
-//     function calculateTotal(luckyNum, totalAmount) {
-//      var luckyNum1 = totalAmount * .10;
-//      var luckyNum2 = totalAmount * .25;
-//      var luckyNum3 = totalAmount * .35;
-//      var luckyNum4 = totalAmount * .50;
-//
-//         if(luckyNum === 1) {
-//             return " ! You get a 10% discount and you pay $" + (totalAmount - luckyNum1) + "!";
-//         } else if(luckyNum === 2) {
-//             return " ! You get a 25% discount and you pay $" + (totalAmount - luckyNum2) + "!";
-//         } else if(luckyNum === 3) {
-//             return " ! You get a 35% discount and you pay $" + (totalAmount - luckyNum3) + "!";
-//         } else if(luckyNum === 4) {
-//             return " ! You get a 50% discount and you pay $" + (totalAmount - luckyNum4) + "!";
-//         } else if(luckyNum === 5) {
-//             return " ! You get it all free!"
-//         } else {
-//             return " You have no discount";
-//         }
-// }
-//
-//     console.log(calculateTotal(2, 100));
+    function calculateTotal(luckyNum, totalAmount) {
+     var luckyNum1 = totalAmount * .10;
+     var luckyNum2 = totalAmount * .25;
+     var luckyNum3 = totalAmount * .35;
+     var luckyNum4 = totalAmount * .50;
+
+        if(luckyNum === 1) {
+            return " ! You get a 10% discount and you pay $" + (totalAmount - luckyNum1) + "!";
+        } else if(luckyNum === 2) {
+            return " ! You get a 25% discount and you pay $" + (totalAmount - luckyNum2) + "!";
+        } else if(luckyNum === 3) {
+            return " ! You get a 35% discount and you pay $" + (totalAmount - luckyNum3) + "!";
+        } else if(luckyNum === 4) {
+            return " ! You get a 50% discount and you pay $" + (totalAmount - luckyNum4) + "!";
+        } else if(luckyNum === 5) {
+            return " ! You get it all free!"
+        } else {
+            return " You have no discount";
+        }
+}
+
+    console.log(calculateTotal(2, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -124,10 +127,10 @@
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-//  var luckyNumber = Math.floor(Math.random() * 6);
+ var luckyNumber = Math.floor(Math.random() * 6);
 //
-//     var totalBill = prompt("What is your total bill");
-//     alert("Your luck number was " + luckyNumber + calculateTotal(luckyNumber,totalBill));
+    var totalBill = prompt("What is your total bill");
+    alert("Your luck number was " + luckyNumber + calculateTotal(luckyNumber,totalBill));
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -149,19 +152,23 @@ var chooseNum = confirm("would you like to enter a number?");
 // var notNumber = alert("That's NOT a number.");
     if(chooseNum === true) {
         var userNumber = prompt("which number?");
+        if ( Number(userNumber)) {
 
-        if (userNumber % 2 === 0) {
-            alert(userNumber + ". This number is even!");
+            if (userNumber % 2 === 0) {
+                alert(userNumber + ". This number is even!");
+            } else {
+                alert(userNumber + ". This number is odd!");
+            }
+            if (chooseNum === true) {
+                alert("Your number Plus 100 is " + (100 + Number(userNumber)) + "!");
+            }
+            if (userNumber >= 1) {
+                alert("Your number is positive!");
+            } else if (userNumber <= 0) {
+                alert("Your number is negative!");
+            }
         } else {
-            alert(userNumber + ". This number is odd!");
-        }
-        if (chooseNum === true) {
-            alert("Your number Plus 100 is " + (100 + Number(userNumber)) + "!");
-        }
-        if(userNumber >= 1){
-         alert("Your number is positive!");
-        } else if(userNumber <= 0) {
-         alert("Your number is negative!");
+            alert("That's NOT a number.");
         }
     }
 
@@ -177,24 +184,24 @@ var chooseNum = confirm("would you like to enter a number?");
 // var chooseNum = confirm("would you like to enter a number?");
  // c
 
-// switch (((((chooseNum === true) || chooseNum % 2 === 0)|| chooseNum >= 1) || chooseNum >= 0)){
-//     case true:
-//         prompt("which number?");
-//         break;
-//     case chooseNum % 2 === 0:
-//         alert(chooseNum + ". This number is even!");
-//         break;
-//     case chooseNum:
-//         alert("Your number Plus 100 is " + (Number(chooseNum) + 100) + "!" );
-//         break;
-//     case chooseNum >=1:
-//         alert("Your number is positive!");
-//         break;
-//     case chooseNum <= 0:
-//         alert("Your number is negative!");
-//     default:
-//         alert("That's not a number.");
-// }
+switch (((((chooseNum === true) || chooseNum % 2 === 0)|| chooseNum >= 1) || chooseNum >= 0)){
+    case true:
+        prompt("which number?");
+        break;
+    case chooseNum % 2 === 0:
+        alert(chooseNum + ". This number is even!");
+        break;
+    case chooseNum:
+        alert("Your number Plus 100 is " + (Number(chooseNum) + 100) + "!" );
+        break;
+    case chooseNum >=1:
+        alert("Your number is positive!");
+        break;
+    case chooseNum <= 0:
+        alert("Your number is negative!");
+    default:
+        alert("That's not a number.");
+}
 
 // var chooseNum = confirm("would you like to enter a number?");
 // function chooseNumber(w) {
