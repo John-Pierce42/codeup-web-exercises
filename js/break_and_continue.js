@@ -36,6 +36,17 @@ Here is an odd number: 47
 Here is an odd number: 49
  */
 
+// Refactored.
+// while(true){
+//     var userInput = Number(prompt("Enter an odd number between 1 and 50"));
+//
+//     if(userInput % 2 !== 0){
+//         break;
+//     } else {
+//         alert("That's NOT an odd number.")
+//     }
+// }
+
 // var num = 1;
 // do{
 //     var userInput = Number(prompt("enter an odd number between 1 and 50"));
@@ -45,9 +56,20 @@ Here is an odd number: 49
 //           } else {
 //
 //         }
-//
-//
 // }while(num <= 50);
+
+//Practice
+var userInput = Number(prompt("Enter an odd number between 1 and 50"));
+
+for(var i = 1; i < 50; i++){
+    if(i % 2 !== 0){
+        if(i === userInput){
+            console.log("Yikes skipping this number: " + userInput);
+            continue;
+        }
+        console.log("Here is an odd number: " + i);
+    }
+}
 
 // var userInput = Number(prompt("enter an odd number between 1 and 50"));
 //
@@ -62,9 +84,7 @@ Here is an odd number: 49
 //
 // }
 
-
-
-
+// Instructors Notes.
 /*
 // BREAK AND CONTINUE: Ways to manipulate the behavior of your loop [stop vs skip]
 
@@ -103,18 +123,3 @@ Here is an odd number: 49
  */
 
 
-/*
-    var goTo50 = 1;
-            while (goTo50 <= 50) {
-                if (userInput % 2 === 0) {
-                    continue;
-                    console.log("here's an odd number" + goTo50);
-                    if (userInput === goTo50) {
-                        console.log("yikes skipping this number!: " + goTo50);
-                        goTo50++;
-                        console.log(goTo50);
-                    }
-                }
-            }
-        }
- */

@@ -15,6 +15,17 @@ For example, showMultiplicationTable(7) should output
 7 x 10 = 70
  */
 
+// Refactored.
+// function showMultiplicationTable(value){
+//     for(var num = 1;num <= 10;num++){
+//
+//         console.log(value + " x " + num + " = " + value * num);
+//     }
+// }
+//
+// showMultiplicationTable(7);
+
+
 // function showMultiplicationTable(num){
 //
 //     for (var i = 1; i <= 10; i++) {
@@ -32,6 +43,17 @@ Use a for loop and the code from the previous lessons to generate 10 random numb
 199 is odd
 ...
  */
+
+// Refactored.
+// for(var i = 0; i < 10; i++){
+//     var randomNum = Math.floor(Math.random() * 180) + 20;
+//     if(randomNum % 2 === 0){
+//         console.log(randomNum + " Is Even...");
+//     } else {
+//         console.log(randomNum + " Is Odd...");
+//     }
+// }
+
 
 // for(var i = 1; i <= 10; i++){
 //     var randomNum = Math.floor(Math.random() * 201);
@@ -91,6 +113,11 @@ Create a for loop that uses console.log to create the output shown below.
 10
 5
  */
+
+// Refactored.
+// for(var i = 100; i >= 5; i -= 5){
+//     console.log(i);
+// }
 
 // for(var i = 100; i >= 5; i = i - 5){
 //     console.log(i);
