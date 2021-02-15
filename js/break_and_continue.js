@@ -1,3 +1,5 @@
+(function (){
+
 "use strict";
 
 /*
@@ -59,17 +61,17 @@ Here is an odd number: 49
 // }while(num <= 50);
 
 //Practice
-var userInput = Number(prompt("Enter an odd number between 1 and 50"));
-
-for(var i = 1; i < 50; i++){
-    if(i % 2 !== 0){
-        if(i === userInput){
-            console.log("Yikes skipping this number: " + userInput);
-            continue;
-        }
-        console.log("Here is an odd number: " + i);
-    }
-}
+// var userInput = Number(prompt("Enter an odd number between 1 and 50"));
+//
+// for(var i = 1; i < 50; i++){
+//     if(i % 2 !== 0){
+//         if(i === userInput){
+//             console.log("Yikes skipping this number: " + userInput);
+//             continue;
+//         }
+//         console.log("Here is an odd number: " + i);
+//     }
+// }
 
 // var userInput = Number(prompt("enter an odd number between 1 and 50"));
 //
@@ -122,4 +124,4 @@ for(var i = 1; i < 50; i++){
 // }
  */
 
-
+})();

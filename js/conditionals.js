@@ -1,3 +1,6 @@
+(function (){
+
+
 "use strict";
 
 /* ########################################################################## */
@@ -274,4 +277,4 @@ switch (((((chooseNum === true) || chooseNum % 2 === 0)|| chooseNum >= 1) || cho
 //     alert("That is NOT a number!");
 // }
 
-
+})();

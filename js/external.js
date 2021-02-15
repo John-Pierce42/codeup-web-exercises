@@ -1,3 +1,7 @@
+(function (){
+
+
+
 "use strict";
 //console.log
 console.log("Hello from external JavaScript");
@@ -14,6 +18,9 @@ var lm = prompt("How many days did you rent Little Mermaid?");
 alert("you rented Little Mermaid for " + lm + " days.");
 
 var bb = prompt("How many days did you rent Brother Brear?");
+
+
+
 alert("you rented Brother Brear for " + bb + " days.");
 
 var h = prompt("How many days did you rent Hercules?");
@@ -48,3 +55,5 @@ var premiumMember = confirm("Are You a premium member?");
 var canUserUseOffer = (personBought2 || premiumMember) && isOfferValid;
 
 alert("you can use this offer: " + canUserUseOffer + " .");
+
+})();

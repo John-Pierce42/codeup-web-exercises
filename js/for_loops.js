@@ -1,3 +1,5 @@
+(function (){
+
 
 "use strict";
 /*
@@ -122,3 +124,5 @@ Create a for loop that uses console.log to create the output shown below.
 // for(var i = 100; i >= 5; i = i - 5){
 //     console.log(i);
 // }
+
+})();
