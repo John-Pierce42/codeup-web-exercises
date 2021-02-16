@@ -14,32 +14,29 @@ var user = prompt("What is you favorite color?");
 alert("Great " + user + " is my favorite color too");
 
 //exercise 3
-var lm = prompt("How many days did you rent Little Mermaid?");
+var lm = parseInt(prompt("How many days did you rent Little Mermaid?"));
 alert("you rented Little Mermaid for " + lm + " days.");
 
-var bb = prompt("How many days did you rent Brother Brear?");
-
-
-
+var bb = parseInt(prompt("How many days did you rent Brother Brear?"));
 alert("you rented Brother Brear for " + bb + " days.");
 
-var h = prompt("How many days did you rent Hercules?");
+var h = parseInt(prompt("How many days did you rent Hercules?"));
 alert("you rented Hercules for " + h + " days.");
 
 alert("This is how much you have paid in total for the movies you rented: $" + ((lm * 3) + (bb * 3) + (h * 3)));
 
-var googleRate = prompt("What is your pay rate at Google?");
-var googleHour = prompt("How many hour did you work Google?");
+var googleRate = parseInt(prompt("What is your pay rate at Google?"));
+var googleHour = parseInt(prompt("How many hour did you work Google?"));
 var googlePay = googleRate * googleHour;
 alert("you made $ " + googlePay);
 
-var amazonRate = prompt("What is your pay rate at Amazon?");
-var amazonHour = prompt("How many hour did you work at Amazon?");
+var amazonRate = parseInt(prompt("What is your pay rate at Amazon?"));
+var amazonHour = parseInt(prompt("How many hour did you work at Amazon?"));
 var amazonPay = amazonRate * amazonHour;
 alert("you made $ " + amazonPay);
 
-var facebookRate = prompt("What is your pay rate at Facebook?");
-var facebookHour = prompt("How many hour did you work at Facebook?");
+var facebookRate = parseInt(prompt("What is your pay rate at Facebook?"));
+var facebookHour = parseInt(prompt("How many hour did you work at Facebook?"));
 var facebookPay = facebookRate * facebookHour;
 alert("you made $ " + facebookPay);
 
