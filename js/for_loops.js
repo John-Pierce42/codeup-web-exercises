@@ -79,15 +79,14 @@ Create a for loop that uses console.log to create the output shown below.
 999999999
  */
 
-    // var totalNumberofRows = 9;
-    // var num = ""
-    // for (var i = 1; i <= totalNumberofRows; i++) {
-    //     for (var j = 1; j <= i; j++) {
-    //         num = num + j + '  ';
-    //     }
-    //     console.log(num);
-    //
-    // }
+
+    for (var i = 1; i <= 9; i++) {
+        for (var j = 1; j <= i; j++) {
+            i = i + j;
+        }
+        console.log(j);
+
+    }
 
 
 

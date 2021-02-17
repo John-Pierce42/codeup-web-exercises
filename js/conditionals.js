@@ -187,24 +187,24 @@ var chooseNum = confirm("would you like to enter a number?");
 // var chooseNum = confirm("would you like to enter a number?");
  // c
 
-switch (((((chooseNum === true) || chooseNum % 2 === 0)|| chooseNum >= 1) || chooseNum >= 0)){
-    case true:
-        prompt("which number?");
-        break;
-    case chooseNum % 2 === 0:
-        alert(chooseNum + ". This number is even!");
-        break;
-    case chooseNum:
-        alert("Your number Plus 100 is " + (Number(chooseNum) + 100) + "!" );
-        break;
-    case chooseNum >=1:
-        alert("Your number is positive!");
-        break;
-    case chooseNum <= 0:
-        alert("Your number is negative!");
-    default:
-        alert("That's not a number.");
-}
+// switch (chooseNum){
+//     case true:
+//         prompt("which number?");
+//         break;
+//     case chooseNum % 2 === 0:
+//         alert(chooseNum + ". This number is even!");
+//         break;
+//     case chooseNum:
+//         alert("Your number Plus 100 is " + (Number(chooseNum) + 100) + "!" );
+//         break;
+//     case chooseNum >=1:
+//         alert("Your number is positive!");
+//         break;
+//     case chooseNum <= 0:
+//         alert("Your number is negative!");
+//     default:
+//         alert("That's not a number.");
+// }
 
 // var chooseNum = confirm("would you like to enter a number?");
 // function chooseNumber(w) {
