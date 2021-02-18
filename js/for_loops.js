@@ -79,16 +79,24 @@ Create a for loop that uses console.log to create the output shown below.
 999999999
  */
 
+    // var pyramid = "";
+    // for (var i = 1; i <= 9; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //        pyramid = pyramid + i + j;
+    //     }
+    //
+    //     console.log(i + j);
+    // }
 
+
+    var output = "";
     for (var i = 1; i <= 9; i++) {
         for (var j = 1; j <= i; j++) {
-            i = i + j;
+            output = output + i;
         }
-        console.log(j);
-
+        console.log(output);
+        output = "";
     }
-
-
 
 
 /*
