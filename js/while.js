@@ -26,6 +26,13 @@ Create a while loop that uses console.log() to create the output shown below.
 32768
 65536
  */
+// Practice.
+//     var i = 2;
+//     while(i <= 65536){
+//         console.log(i);
+//         i = i * 2;
+//
+//     }
 
 // Refactored.
 // var num = 2;
@@ -60,25 +67,25 @@ Cannot sell you 6 cones I only have 3...  // If there are not enough cones
 Yay! I sold them all! // If there are no more cones
  */
 
-// var allCones = Math.floor(Math.random() * 50) + 50;
+var allCones = Math.floor(Math.random() * 50) + 50;
 
 
-// do{
-//     var numOfCones = Math.floor(Math.random() * 5) + 1;
-//         allCones = allCones - numOfCones;
-//
-//             console.log(numOfCones + " cones sold...");
-//
-//             if (numOfCones > allCones) {
-//                 console.log("Cannot sell you " + numOfCones + " cones I only have " + allCones + "...");
-//                 if(allCones === 0) {
-//                     console.log("Yay! I sold them all!");
-//                 }
-//
-//             }
-//
-//
-// }while( allCones > numOfCones );
+do{
+    var numOfCones = Math.floor(Math.random() * 5) + 1;
+        allCones = allCones - numOfCones;
+
+            console.log(numOfCones + " cones sold...");
+
+            if (numOfCones > allCones) {
+                console.log("Cannot sell you " + numOfCones + " cones I only have " + allCones + "...");
+                if(allCones === 0) {
+                    console.log("Yay! I sold them all!");
+                }
+
+            }
+
+
+}while( allCones > numOfCones );
 
 
 
@@ -104,5 +111,5 @@ Yay! I sold them all! // If there are no more cones
 //
 //
 // }while (totalLeft >= 0);
-
-})();
+//
+ })();

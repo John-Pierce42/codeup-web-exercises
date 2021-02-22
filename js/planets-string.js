@@ -18,7 +18,7 @@
      * the step that it describes
      */
 
-    console.log('Adding "The Sun" to the beginning of the planets array.');
+    console.log('Adding "The Sun" to the beginning of the planets git array.');
     planets.unshift("Sun");
     console.log(planets);
 

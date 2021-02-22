@@ -17,7 +17,7 @@ For example, showMultiplicationTable(7) should output
 7 x 10 = 70
  */
 
-// Refactored.
+//Refactored.
 // function showMultiplicationTable(value){
 //     for(var num = 1;num <= 10;num++){
 //
@@ -37,6 +37,12 @@ For example, showMultiplicationTable(7) should output
 // }
 // showMultiplicationTable(7)
 
+    //Nested loop version.
+// for(var j = 1; j <= 12; j++) {
+//     for (var i = 1; i <= 12; i++) {
+//         console.log(j + " x " + i + " = " + (j * i));
+//     }
+// }
 /*
 Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
 123 is odd
@@ -79,24 +85,27 @@ Create a for loop that uses console.log to create the output shown below.
 999999999
  */
 
-    // var pyramid = "";
-    // for (var i = 1; i <= 9; i++) {
-    //     for (var j = 1; j <= i; j++) {
-    //        pyramid = pyramid + i + j;
-    //     }
-    //
-    //     console.log(i + j);
-    // }
+// Refactored.
+//     var pyramid = "";
+//     for (var i = 1; i <= 9; i++) {
+//         for (var j = 1; j <= i; j++) {
+//            pyramid = pyramid + i;
+//         }
+//
+//         console.log(pyramid);
+//         pyramid = "";
+//     }
 
 
-    var output = "";
-    for (var i = 1; i <= 9; i++) {
-        for (var j = 1; j <= i; j++) {
-            output = output + i;
-        }
-        console.log(output);
-        output = "";
-    }
+// Better
+//     for (var i = 1; i <= 9; i++) {
+//         var output = "";
+//         for (var j = 1; j <= i; j++) {
+//             output = output + i;
+//         }
+//         console.log(output);
+//
+//     }
 
 
 /*
@@ -122,6 +131,12 @@ Create a for loop that uses console.log to create the output shown below.
 10
 5
  */
+
+
+// Practice.
+//     for(var i = 100; i >= 5; i = i - 5){
+//         console.log(i);
+//     }
 
 // Refactored.
 // for(var i = 100; i >= 5; i -= 5){
