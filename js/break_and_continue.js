@@ -38,18 +38,22 @@ Here is an odd number: 47
 Here is an odd number: 49
  */
 
-   // var user =  Number(prompt("enter an odd number between 1 and 50."));
-   //
-   // function inRange(num){
-   //     return num >= 1 && num <= 50;
-   // }
-   // function isOdd (num) {
-   //     return num % 2 === 1;
-   //
-   // }
-   //  while(true){
-   //
-   //  }
+   var user =  Number(prompt("enter an odd number between 1 and 50."));
+
+   function inRange(num){
+       return num >= 1 && num <= 50;
+   }
+
+   function isOdd (num) {
+       return num % 2 === 1;
+   }
+
+    while(true){
+        if(inRange(user) && isOdd(user)){
+            break;
+        }
+
+    }
 
 
 
