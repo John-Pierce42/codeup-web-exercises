@@ -52,7 +52,18 @@ Here is an odd number: 49
         if(inRange(user) && isOdd(user)){
             break;
         }
+        else {
+            user = Number(prompt("enter an odd number between 1 and 50."));
+        }
+    }
 
+    for(var i = 1; i <= 49; i = i + 2){
+        if(i === user){
+            console.log("Yikes! Skipping number: " + i);
+            continue;
+        }
+
+        console.log("Here's an odd number: " + i);
     }
 
 
