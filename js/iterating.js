@@ -13,7 +13,7 @@
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-        console.log("There are " + names.length + " in the names array.");
+        console.log("There are " + names.length + " names in the array.");
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
@@ -35,8 +35,9 @@
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-        names.forEach(function (names){
-        console.log("These are our family names: " + names);
+    console.log("forEach loop");
+    names.forEach(function (aName){
+        console.log("These are our family names: " + aName);
     });
     /**
      * TODO:
@@ -52,19 +53,18 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    var num = [1, 2, 3, 4, 5]
 
-    function first(){
-        return num[0];
+    function first(array){
+        return array[0];
     }
-    function second(){
-        return num[1];
+    function second(array){
+        return array[1];
     }
-    function last(){
-        return num[4];
+    function last(array){
+        return array[array.length -1];
     }
 
-    console.log(first());
-    console.log(second());
-    console.log(last());
+    console.log(first(names));
+    console.log(second(names));
+    console.log(last(names));
 })();
