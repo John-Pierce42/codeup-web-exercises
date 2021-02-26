@@ -45,26 +45,26 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-    console.log(shoppers);
-
-    shoppers.forEach(function(shopper){
-    var discount = shopper.amount * .12;
-    var discountTotal = shopper.amount - discount;
-
-
-     if(shopper.amount > 200) {
-         alert(shopper.name + " you spent $" + shopper.amount + " and you get a 12 % discount witch is $" + discount.toFixed(2) + " off and all you pay is $" + discountTotal.toFixed(2) + ".");
-     }
-     else if( shopper.amount < 200) {
-         alert(shopper.name + " You spent $" + shopper.amount + " and need to spend $" + discount.toFixed(2) + " to receive a 12% discount.")
-     }
-
-})
+//     var shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//     console.log(shoppers);
+//
+//     shoppers.forEach(function(shopper){
+//     var discount = shopper.amount * .12;
+//     var discountTotal = shopper.amount - discount;
+//
+//
+//      if(shopper.amount > 200) {
+//          alert(shopper.name + " you spent $" + shopper.amount + " and you get a 12 % discount witch is $" + discount.toFixed(2) + " off and all you pay is $" + discountTotal.toFixed(2) + ".");
+//      }
+//      else if( shopper.amount < 200) {
+//          alert(shopper.name + " You spent $" + shopper.amount + " and need to spend $" + discount.toFixed(2) + " to receive a 12% discount.")
+//      }
+//
+// });
 
 
 
@@ -81,6 +81,46 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {title: "Hitchhikers guid to the galaxy",
+            author: {
+                firstName: "Douglas",
+                lastName: "Adams"}
+                },
+
+        {title: "The Crusades",
+            author: {
+                firstName: "Thomas ",
+                lastName: "Asbridge"}
+                },
+
+        {
+            title: "Zero FootPrints",
+            author: {
+                firstName: "Simon",
+                lastName: "Chase"
+            }
+        },
+
+            // author2: {
+            //     firstName:  "Ralph",
+            //     lastName: "Pezzullo"}
+            // },
+
+        {title: "World War Z",
+            author: {
+                firstName: "Max",
+                lastName: "Brooks"}
+        },
+
+        {title: "The Secret",
+            author: {
+                firstName: "Rhonda",
+                lastName: "Byrne"}
+        }];
+
+    // console.log(books[0].title);
 
     /**
      * TODO:
@@ -106,6 +146,18 @@
      *      ---
      *      ...
      */
+
+    books.forEach(function (book,index){
+        console.log("Book # " + (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+        console.log("---");
+    });
+
+    // for(var i = 0; i < books.length; i++){
+    //     console.log("book # " + [i] + " is " +  );
+    //
+    // }
 
     /**
      * Bonus:
