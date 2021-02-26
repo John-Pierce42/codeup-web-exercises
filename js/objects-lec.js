@@ -194,9 +194,9 @@ var sigOtherCar = {
         firstName: "gabby",
         lastName: "dominguez",
     }
-    turnOn: function (){
 
-    }
+
+
 };
 
 
