@@ -170,4 +170,16 @@
      *   `showBookInfo` function.
      */
 
+    function createBook(title,authorName,authorLastName ){
+       var  newBook = {
+           title: title,
+           author: {
+            firstName: authorName , lastName: authorLastName
+           }
+        }
+        return newBook;
+    }
+
+    console.log(createBook("the book", "john", "doe"));
+
 })();
