@@ -147,12 +147,12 @@
      *      ...
      */
 
-    books.forEach(function (book,index){
-        console.log("Book # " + (index + 1));
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
-        console.log("---");
-    });
+    // books.forEach(function (book,index){
+    //     console.log("Book # " + (index + 1));
+    //     console.log("Title: " + book.title);
+    //     console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    //     console.log("---");
+    // });
 
     // for(var i = 0; i < books.length; i++){
     //     console.log("book # " + [i] + " is " +  );
@@ -181,5 +181,15 @@
     }
 
     console.log(createBook("the book", "john", "doe"));
+
+    function showBookInfo(bookObject,bookNum){
+        console.log("Book # " + (bookNum + 1));
+        console.log("Title: " + bookObject.title);
+        console.log("Author: " + bookObject.author.firstName + " " + bookObject.author.lastName);
+        console.log("---");
+    }
+        books.forEach(function(book,index){
+            showBookInfo(book,index);
+        })
 
 })();
