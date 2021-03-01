@@ -50,6 +50,11 @@ function timesFour(x){
 Define a function named convertDaysToHours that takes in one input Days. Return the conversion of the number of days into total hours. If the input is not numeric or a numeric string, convertDaysToHours, should return false.
  */
 
-
+function convertDaysToHours(x){
+    if(isNaN(x) || x === null || typeof x === "boolean"){
+        return false;
+    }
+    return x * 24;
+}
 
 })();
