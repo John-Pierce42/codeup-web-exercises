@@ -57,4 +57,16 @@ function convertDaysToHours(x){
     return x * 24;
 }
 
+    function lowerCase(x){
+    if (!isNaN(parseInt(x))) {
+        return false;
+    } else if (typeof (x) === "string"){
+        return x.toLowerCase();
+    } else{
+    return false;
+}
+}
+
+
+
 })();
