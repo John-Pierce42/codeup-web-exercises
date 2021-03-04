@@ -6,60 +6,63 @@
 </head>
 <body>
 
-<form method="post" action="https://request-inspector.glitch.me/">Email
-    <label>
-        <input name="Email" type="email" placeholder="Enter Email here.">
-    </label>
-    <input type="submit">
-</form>
-
-<br>
-
-<form method="post" action="https://request-inspector.glitch.me/">Password
-    <label>
-        <input name="Password" type="password" placeholder="Enter Password here.">
-        <input type="submit">
-    </label>
-</form>
-
-<br>
-
-<form method="post" action="https://request-inspector.glitch.me/">Bio
-    <label>
-        <textarea name="Bio" placeholder="Tell us a little bit about your self."></textarea>
-        <input type="submit">
-    </label>
-</form>
-<br>
 <form method="post" action="https://request-inspector.glitch.me/">
+
+    <label for="email" >Email</label>
+    <input name="Email" type="email" id="email" placeholder="Enter Email here.">
+
+    <br>
+
+    <label for="password">Password</label>
+    <input name="Password" type="password" id="password" placeholder="Enter Password here.">
+
+    <br>
+
+    <label for="bio">Bio</label>
+    <br>
+    <textarea name="Bio" id="bio" placeholder="Tell us a little bit about your self."></textarea>
+
+    <br>
 
     <h4>How did you hear about us?</h4>
+        <label>
+            <input type="checkbox" name="check box question 1" value="billboard">billboard
+        </label>
+        <br>
+    <label>
+        <input type="checkbox" name="check box question 1" value="radio advertisement">radio advertisement
+    </label>
+        <br>
+    <label>
+        <input type="checkbox" name="check box question 1" value="internet advertisement">internet advertisement
+    </label>
+        <br>
+    <label>
+        <input type="checkbox" name="check box question 1" value="other">other
+    </label>
 
-    <label>billboard
-        <input type="radio" name="radio question 1" value="billboard">
-    </label>
-    <label>radio advertisement
-        <input type="radio" name="radio question 1" value="radio advertisement">
-    </label>
-    <label>internet advertisement
-        <input type="radio" name="radio question 1" value="internet advertisement">
-    </label>
-    <label>other
-        <input type="radio" name="radio question 1" value="other">
-    </label>
-    <button type="submit">Submit your Answer</button>
-</form>
-<br>
-<form method="post" action="https://request-inspector.glitch.me/">
-    <h4>What web browser are you using?</h4>
-    <select name="Web browser they are using.">
+    <br>
+    <br>
+
+    <label for="web browser">What Browser do you using?</label>
+
+    <select name="Web browser they are using." id="web browser">
         <option value="Chrome">Google Chrome</option>
         <option value="Fox">Fire Fox</option>
         <option value="Safari">Safari</option>
+        <option disabled value="Internet Explore">Internet Explore</option>
     </select>
+
+    <br>
+    <br>
     <input type="submit">
 
+    <input type="submit" value="Register Now!">
+
+    <button type="submit">Submit your Answer</button>
+
 </form>
+
 
 </body>
 </html>
