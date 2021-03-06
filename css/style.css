@@ -1,17 +1,36 @@
 
+h1 {
+    text-align: center;
+}
+body {
+    background-color: lightgray;
+    background-image: url("../img/spacex-PIOgkhaF3WA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
 
+
+
+}
 .tmnt-d {
-    background-color: #995AA0;
+    color: #995AA0;
+    text-decoration: underline;
 }
 .tmnt-m {
-    background-color: #EA9500;
+    color: #EA9500;
+    text-decoration: underline;
 }
 .tmnt-r {
-    background-color: #E3331C;
+    color: #E3331C;
+    text-decoration: underline;
 }
 .tmnt-l {
-    background-color: #00AAE6;
+    color: #00AAE6;
+    text-decoration: underline;
 }
 .tmnt-s {
-    background-color: #4C9C23;
+    color: #4C9C23;
+    text-decoration: underline;
 }
