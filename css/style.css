@@ -1,19 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap');
 
 h1 {
     text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+}
+h2 {
+    font-family: "Creepster", sans-serif;
 }
 body {
     background-color: lightgray;
     background-image: url("../img/spacex-PIOgkhaF3WA-unsplash.jpg");
     background-repeat: no-repeat;
+    /*background-position: center;*/
     background-size: cover;
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
-
-
-
 }
+
+p {
+    color:white;
+}
+ul {
+    color: white;
+    list-style: square;
+}
+ol {
+    color: white;
+    list-style: upper-alpha;
+}
+th {
+    text-decoration: underline;
+}
+td {
+    color: black;
+    padding: 15px;
+}
+
+
 .tmnt-d {
     color: #995AA0;
     text-decoration: underline;
@@ -33,4 +57,17 @@ body {
 .tmnt-s {
     color: #4C9C23;
     text-decoration: underline;
+}
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: green;
 }
