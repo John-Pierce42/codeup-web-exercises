@@ -7,10 +7,15 @@ html {
     /*background-size: cover;*/
 
 }
+header {
+    text-align: center;
+
+}
 
 h1 {
-    text-align: center;
+    /*text-align: center;*/
     font-family: 'Press Start 2P', sans-serif;
+    text-decoration: underline;
 }
 h2 {
     font-family: "Creepster", sans-serif;
@@ -21,47 +26,57 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+.auto-margins {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
     color:white;
+
 }
-ul {
+
+
+ul, ol {
     color: white;
-    list-style: square;
+
 }
-ol {
-    color: white;
-    list-style: upper-alpha;
+
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+    font-size: 1.2em;
 }
-th {
-    text-decoration: underline;
-}
-td {
-    color: black;
-    padding: 15px;
+
+th, td {
+    border: thin dotted black;
+    padding: 7px;
+
 }
 
 
 .tmnt-d {
     color: #995AA0;
-    text-decoration: underline;
+
 }
 .tmnt-m {
     color: #EA9500;
-    text-decoration: underline;
+
 }
 .tmnt-r {
     color: #E3331C;
-    text-decoration: underline;
+
 }
 .tmnt-l {
     color: #00AAE6;
-    text-decoration: underline;
+
 }
 .tmnt-s {
     color: #4C9C23;
-    text-decoration: underline;
+
 }
 a {
     background-color: lightgrey;
