@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap');
+html {
+
+}
 
 h1 {
     text-align: center;
@@ -8,14 +11,11 @@ h2 {
     font-family: "Creepster", sans-serif;
 }
 body {
-    background-color: lightgray;
+    background-color: black;
     background-image: url("../img/spacex-PIOgkhaF3WA-unsplash.jpg");
     background-repeat: no-repeat;
-    /*background-position: center;*/
-    background-size: cover;
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 p {
@@ -57,6 +57,9 @@ td {
 .tmnt-s {
     color: #4C9C23;
     text-decoration: underline;
+}
+a {
+    background-color: lightgrey;
 }
 
 a:link {
