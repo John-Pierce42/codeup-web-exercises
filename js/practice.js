@@ -68,5 +68,27 @@ function convertDaysToHours(x){
 }
 
 
+    /*
+    Define a function named lowerCase that takes in an input and returns that input as a string in all lower case letters. Returns false if the input passed is not a string.
+
+     lowerCase('CODEUP')                 // codeup
+     lowerCase('George WashingTon')      // george washington
+     lowerCase(0)                        // false
+     lowerCase(true)                     // false
+     lowerCase('BoBby')                  // bobby
+     lowerCase(null)                     // false
+     lowerCase([1,2,3])                  // false
+     lowerCase({fName: 'Bruce', lName: 'Wayne'})    // false
+     */
+
+    function lowerCase(input) {
+        if (typeof input === "string"){
+            return input.toLowerCase();
+        } else {
+            return false;
+        }
+
+    }
+
 
 })();
