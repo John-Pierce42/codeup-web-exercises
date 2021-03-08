@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap');
 html {
+    /*background: url("../img/spacex-PIOgkhaF3WA-unsplash.jpg") no-repeat center center fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 
 }
 
@@ -15,7 +20,7 @@ body {
     background-image: url("../img/spacex-PIOgkhaF3WA-unsplash.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100% 100%;
 }
 
 p {
