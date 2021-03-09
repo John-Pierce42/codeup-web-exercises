@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message {
+    border: thin solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.message-info {
+    color: darkblue;
+    background-color: lightskyblue;
+    margin: 10px;
+
+}
+
+.message-success {
+    color: darkgreen;
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+.message-warning {
+    color: darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+    margin: 10px;
+}
+
+.message-error {
+    color: darkred;
+    background-color: lightcoral;
+    margin: 10px;
+}
