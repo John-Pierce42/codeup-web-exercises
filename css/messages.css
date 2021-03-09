@@ -7,33 +7,35 @@ body, html {
 }
 
 .message {
-    border: thin solid lightgray;
+    font-size: .8em;
+    border: 1px solid lightgray;
     border-radius: 5px;
-    padding: 10px;
+    margin: .5em 1.2em;
+    padding: .5em;
 
 }
 
 .message-info {
-    color: darkblue;
-    background-color: lightskyblue;
-    margin: 10px;
+    color: #393294;
+    background-color: #cddeff ;
+
 
 }
 
 .message-success {
-    color: darkgreen;
-    background-color: lightgreen;
-    margin: 10px;
+    color: #0f6831;
+    background-color: #cff3da;
+
 }
 
 .message-warning {
-    color: darkgoldenrod;
-    background-color: lightgoldenrodyellow;
-    margin: 10px;
+    color: #9a8932;
+    background-color: #fcfbc9;
+
 }
 
 .message-error {
-    color: darkred;
-    background-color: lightcoral;
-    margin: 10px;
+    color: #89223b;
+    background-color: #fad3d7;
+
 }
