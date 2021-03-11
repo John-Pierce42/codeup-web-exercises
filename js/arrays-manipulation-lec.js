@@ -1,17 +1,17 @@
 "use strict";
-// var pies = [
-//     "apple",
-//     "cherry",
-//     "key lime",
-//     "huckleberry",
-//     "rhubarb"
-// ];
+var pies = [
+    "apple",
+    "cherry",
+    "key lime",
+    "huckleberry",
+    "rhubarb"
+];
 
 // TODO: given the above array how do we log each element to the console?
 
-// for(var i = 0; i < pies.length; i++){
-//     console.log(pies[i]);
-// }
+for(var i = 0; i < pies.length; i++){
+    console.log(pies[i]);
+}
 
 /**
  * ===== Concepts to cover:
