@@ -90,5 +90,26 @@ function convertDaysToHours(x){
 
     }
 
+    // Write a function named subtract that takes in two inputs. If both inputs provided are numeric or numeric strings, subtract will return the difference when the second input is subtracted from the first input. If one or both inputs is not numeric or numeric strings, subtract should return false.
+    //
+    // subtract(10, 2)                     // 8
+    // subtract(0, 0)                      // 0
+    // subtract(-4, 1)                     // -5
+    // subtract("10", 2)                   // 8
+    // subtract(5, true)                   // false
+    // subtract(true, false)               // false
+    // subtract("Monday", "Tuesday")       // false
+    // subtract()                          // false
+
+    function subtract(input1,input2) {
+        if (typeof input1 === "boolean" || typeof input2 === "boolean") {
+            return false;
+
+        } else if( isNaN(input1) || isNaN(input2)){
+            return false;
+        }
+        return input1 - input2;
+
+    }
 
 })();
