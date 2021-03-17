@@ -6,6 +6,7 @@
 
 nav {
     background-color: #c1c1c1;
+
 }
 
 h1 {
@@ -21,10 +22,7 @@ h1 {
     font-family: "Montserrat" ,"sans-serif";
     font-size: 3em;
     padding: .2em;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+
 
 }
 
@@ -55,8 +53,17 @@ a:hover {
 .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
 }
+
+section:nth-child(2){
+    position: absolute;
+    left: 50%;
+    top: 21px;
+    transform: translate(-50%, -50%)
+}
+
 
 
 
