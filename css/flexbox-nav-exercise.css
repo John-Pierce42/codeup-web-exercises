@@ -75,37 +75,32 @@
     padding: 0;
 }
 
-nav {
+header nav {
     background-color: #c1c1c1;
+    display: flex;
+    justify-content: space-between;
 
 }
 
-h1 {
-}
-
-
-ul {
+header nav ul {
     list-style: none;
     font-family: "work sans", "sans-serif";
-}
-
-.main-container {
     display: flex;
-    justify-content: space-between;
+}
+
+ header nav ul a {
+     text-decoration: none;
+     padding: 2em;
 
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1 ;
-    width: 30%;
+ header nav .nav-bar-logo a {
+     font-family: "Montserrat" , "sans-serif";
+     font-size: 3em;
+     padding: .2em 0;
+ }
 
-}
 
-li {
-
-}
 
 
 
