@@ -112,4 +112,23 @@ function convertDaysToHours(x){
 
     }
 
+    /*
+Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the lowest number. If any of the 3 inputs is missing or non-numeric, then return false.
+
+ getLowestNumber(1, 3, 2)            // 1
+ getLowestNumber("0", 1, 2)          // 0
+ getLowestNumber(9, 3, -20)          // -20
+ getLowestNumber(2, 2, 2)            // 2
+ getLowestNumber(2, 5, 5)            // 2
+ getLowestNumber(1, 2, 'x')          // false
+ getLowestNumber("a", "b")           // false
+ getLowestNumber()                   // false
+ */
+
+    function getLowestNumber (x,y,z){
+        if (isNaN(x) || isNaN(y) || isNaN(z)){
+            return false;
+        }
+        return Math.min(x,y,z);
+    }
 })();
