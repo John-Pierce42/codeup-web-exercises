@@ -131,4 +131,29 @@ Write a function named getLowestNumber that takes in 3 arguments. If all 3 input
         }
         return Math.min(x,y,z);
     }
+
+
+   /* Define a function named isEvenlyDivisible that takes in two inputs: a numeric value and divisor. If the numeric value can be evenly divided by the divisor, then return true. Otherwise, return false.
+
+    isEvenlyDivisible(100, 2)           // true
+    isEvenlyDivisible("100", 3)         // false
+    isEvenlyDivisible(150, 3)           // true
+    isEvenlyDivisible(15.5, 5)          // false
+    isEvenlyDivisible(5, 5)             // true
+    isEvenlyDivisible("70", "7")        // true
+    isEvenlyDivisible(null, 7)          // false
+    isEvenlyDivisible(3, "three")       // false
+    isEvenlyDivisible()                 // false
+    */
+
+    function isEvenlyDivisible(x,y){
+        if( x % 2 === 0 && y % 2 !== 0) {
+            return false;
+        } else if( isNaN(x) || isNaN(y) || x === null || y === null) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
 })();
