@@ -41,15 +41,19 @@ function locateElements (element){
 
 // TODO: Howell's doesn't sound like the name you'd give your hat shop - let's change the innerText of that in our navigation bar to your own name.
 
-var shopName = document.getElementsByClassName("navbar-brand");
-shopName.innerText = "John's";
+var shopName = document.getElementsByTagName("a");
+shopName[0].innerText = "John's";
 console.log(shopName.innerText);
 
 // TODO: There's only one ordered list on the page - can you get into that ordered list and use innerHTML to change the list items within that ordered list to what you think the top sellers were?
-var
+var topSellers = document.getElementsByClassName("hat-sold");
+topSellers[0].innerHTML = "<strong> Best seller: Baseball hats</strong>"
 
 // TODO (BONUS): I have two "special-offer" classes used in my table - grab those classes by name, store them into a variable, and then use a loop to replace the innerHTML. The new table data should have strings that let our customers know that "New discounts are coming soon!"
-
+var specialOffer = document.getElementsByClassName("special-offer");
+for(var i = 0; i < specialOffer.length; i++){
+    specialOffer[i].innerHTML = "New discounts are coming soon!"
+}
 // attributes
 
 // TODO: Bringing in Bootstrap components, sometimes we can forget to change example or demo related text - one of my ids in the HTML is set to "navbarTogglerDemo02". I don't think we need that ID at all, can you remove that attribute for me? Start by storing it in a variable!
