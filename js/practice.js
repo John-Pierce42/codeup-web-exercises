@@ -190,7 +190,14 @@ Write a function named getLowestNumber that takes in 3 arguments. If all 3 input
     //        canDrink.push(ages[i])
     //     }
     // }
-    // console.log(canDrink);
+
+
+    var canDrink = ages.filter(function (age){
+        if( age >= 21) {
+            return true;
+        }
+    })
+    console.log(canDrink);
 
 
 })();
