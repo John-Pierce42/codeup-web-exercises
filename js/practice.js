@@ -2,6 +2,8 @@
 
 "use strict";
 
+// --------------- assessment functions -------------------------->
+
 /*
 Write a function named calculateTax that takes in two inputs representing the totalPaid and the taxPercent. If both inputs are numeric or numeric strings, calculateTax should return the total with tax added in a string looking like: "$XX.XX". If either or both inputs are not numeric or numeric strings, calculateTax should return false.
 
@@ -156,4 +158,21 @@ Write a function named getLowestNumber that takes in 3 arguments. If all 3 input
         }
 
     }
+
+ // <------------ practice functions with arrays and objects ------------>
+
+    var companies = [
+        {name: "Company One", category: "Finance", start: "1981", end: 2003},
+        {name: "Company Two", category: "Retail", start: "1992", end: 2008},
+        {name: "Company Three", category: "Auto", start: "1999", end: 2007},
+        {name: "Company Four", category: "Retail", start: "1989", end: 2010},
+        {name: "Company FIve", category: "Technology", start: "2009", end: 2014},
+        {name: "Company Six", category: "Finance", start: "1987", end: 2010},
+        {name: "Company Seven", category: "Auto", start: "1986", end: 1996},
+        {name: "Company Eight", category: "Technology", start: "2011", end: 2016},
+        {name: "Company Nine", category: "Retail", start: "1981", end: 1989},
+
+    ]
+
+
 })();
