@@ -176,27 +176,37 @@ Write a function named getLowestNumber that takes in 3 arguments. If all 3 input
 
     var ages = [35, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-    // for(var i = 0; i < companies.length; i++){
-    //     console.log(companies[i])
-    // }
+    // <------------- for Loop ----------------->
 
-    // companies.forEach(function (company){
-    //     console.log(company.name);
-    // });
-    //
-    // var canDrink = [];
-    // for(var i = 0; i < ages.length; i++){
-    //     if( ages[i] >= 21){
-    //        canDrink.push(ages[i])
-    //     }
-    // }
+    for(var i = 0; i < companies.length; i++){
+        console.log(companies[i])
+    }
 
+    // <--------------- .forEach() method ------------------>
+
+    companies.forEach(function (company){
+        console.log(company.name);
+    });
+
+    // <------------- var ages: for loop that loops though and pick out all the ages that var canDrink------>
+
+    var canDrink = [];
+    for(var i = 0; i < ages.length; i++){
+        if( ages[i] >= 21){
+           canDrink.push(ages[i])
+        }
+    };
+
+// <--------------- .filter() method ------------->
 
     var canDrink = ages.filter(function (age){
         if( age >= 21) {
             return true;
         }
-    })
+    });
+
+    var canDrink = ages.filter( age => age >= 21);
+
     console.log(canDrink);
 
 
