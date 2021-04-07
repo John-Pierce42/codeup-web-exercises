@@ -41,22 +41,25 @@ $("p").dblclick(dblClickHandler)
 
 
 function hover(e){
-    $("li").css("color", "red");
+    $(this).css("color", "red");
 }
+function hoverOut(e){
+    $(this).css("color", "black");
+};
 
-
+$("li").hover(hover, hoverOut);
 
 // ******************************** out side of a function ******************
 // $("h1").click(function (e){
 //     $(this).css("background-color", "#698362")
 // });
-
+//
 // $("p").dblclick(function (e){
 //     $(e.target).css("font-size", "18px");
 // })
-
-$("li").hover(function (e){
-    $(this).css("color", "red");
-}, function (e){
-    $(this).css("color", "black")
-})
+//
+// $("li").hover(function (e){
+//     $(this).css("color", "red");
+// }, function (e){
+//     $(this).css("color", "black")
+// })
