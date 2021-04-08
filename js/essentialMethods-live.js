@@ -78,8 +78,13 @@ $("nav").removeClass("bg-dark navbar-dark");
 
 //TODO: Finally, create the following - add your own button somewhere on the navbar. Add an event that will toggle the navbar between bg-dark/navbar-dark and bg-info/navbar-light respectively
 
-// $("navbar-toggler").toggleClass(add);
+$(document).ready(function (){
+    $("#colorschemeBtn").click(function (){
+        $("nav").toggleClass("navbar-light navbar-dark");
 
+    })
+
+});
 //TODO: Create your own object with multiple CSS properties you'd like to change. Change whatever element(s) you had in mind with your CSS object and .css()!
 
 
@@ -116,9 +121,9 @@ $(".hat-sold").parent().css("list-style-type", "upper-roman");
 
 //.children()
 //TODO Together: What ID would I need to target to see all of the HTML, as children, that we've been manipulating so far?
-$("#best-seller-cont").children();
+console.log($("#best-seller-cont").children());;
 
 //.next()
 //TODO: Let's slide across branches (sibling to sibling) on our tree and change the HTML within the ordered list we find there to only show Top Hats! !
 
-$("#best-seller-cont").next().html("<li>Top hat</li>")
+$(".best-seller-header").next().html("<li>Top hats</li>")
