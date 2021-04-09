@@ -10,17 +10,19 @@
 
 <script>
     "use strict";
+    var konamiCode = [38,38,40,40,37,39,37,39,66,65,13];
+
+    var keypress = [];
 
     $(document).keyup(function(event){
-        console.log(event.keyCode);
-        var code =[38,38,40,40,37,39,37,39,66,65];
-            for( var i = 0; i < code.length; i++){
-                if(code[i] === event.keyCode.length){
-                    alert("you have 30 lives!")
-            }
-
-            }
-
+        // console.log(event.keyCode);
+        keypress.push(event.keyCode);
+        if(keypress.length > 11) {
+            keypress.shift();
+        }
+        if(keypress === konamiCode) {
+            $("body").html("you have 30 lives!");
+        }
     });
 </script>
 </body>
