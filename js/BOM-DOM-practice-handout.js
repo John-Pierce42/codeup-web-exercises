@@ -17,17 +17,62 @@ var toggleBtn = document.getElementById("toggleClass");
 console.log(toggleBtn);
 toggleBtn.addEventListener("click", function (e){
     var toggleBox = document.getElementById("box")
-    toggleBox.setAttribute("class", "toggleClass1");
+    // toggleBox.setAttribute("class", "toggleClass1");
+
+    if(toggleBox.getAttribute("class") === "toggleClass1"){
+        toggleBox.setAttribute("class", "toggleClass2");
+    } else if(toggleBox.getAttribute("class") === "toggleClass2"){
+        toggleBox.setAttribute("class", "toggleClass1");
+    } else {
+        toggleBox.setAttribute("class", "toggleClass1")
+    }
 })
 
 //TODO: In the #boxInfo element, when the BOX is hovered over the HEIGHT and WIDTH of the box would appear in that HTML area [div]
-
+ var boxInfo = document.getElementById("boxInfo");
 //TODO: When the user types in to our #input and then clicks #inputBtn, what they typed into the box should replace what was inside of the span #userName with the input's contents
+
+// var inputBtn = document.getElementById("inputBtn");
+// var userInput = document.getElementById("input");
+// var replaceSpan = document.getElementById("userName");
+//
+// inputBtn.addEventListener("click", function (){
+//     userInput.value;
+//     replaceSpan.innerText = userInput.value;
+//
+//
+//     var inputArr = userInput.value.split("");
+//     inputArr[0] = inputArr[0].toUpperCase();
+//     var upperCased = inputArr.join("");
+//
+//     replaceSpan.innerText = upperCased;
+//
+//     userInput.value = "";
+// })
 
 //TODO: Refactor the above work - after 5 seconds have passed from the user clicking #inputBtn and seeing #userName change, change the entire div of #helloUser to say "Let me know if you want to play a game. ."
 
+var inputBtn = document.getElementById("inputBtn");
+var userInput = document.getElementById("input");
+var replaceSpan = document.getElementById("userName");
+
+inputBtn.addEventListener("click", function (){
+    userInput.value;
+    replaceSpan.innerText = userInput.value;
 
 
+    var inputArr = userInput.value.split("");
+    inputArr[0] = inputArr[0].toUpperCase();
+    var upperCased = inputArr.join("");
 
+    replaceSpan.innerText = upperCased;
 
+    userInput.value = "";
 
+    var helloUserDiv = document.getElementById("helloUser");
+
+    setTimeout(function (){
+        helloUserDiv.innerHTML = "Let me know if you want to play a Game...."
+    }, 5000);
+
+})
