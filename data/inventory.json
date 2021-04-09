@@ -30,5 +30,19 @@
     "tool"
   ],
   "price": 10
-}
+},
+  {"title": "Tool Box",
+  "quantity": 10,
+  "categories": [
+    "tool"
+  ],
+  "price": 40
+  },
+  {"title": "BBQ Pits",
+    "quantity": 5,
+    "categories": [
+      "outdoor"
+    ],
+    "price": 100
+  }
 ]

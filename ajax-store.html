@@ -19,6 +19,8 @@
     <tbody id="insertProducts"></tbody>
 </table>
 
+<button id="refresh" class="refresh">Refresh</button>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
@@ -26,27 +28,38 @@
         "use strict";
         // TODO: Create an AJAX GET request for the file under data/inventory.json
 
+        function refreshInventory() {
             var request = $.ajax("data/inventory.json");
             console.log(request);
-        // TODO: Take the data from inventory.json and append it to the products table
-        //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-        //             its contents and fields
-        //       HINT: You will want to target #insertProducts for your new HTML elements
-        request.done(function (data){
-            var html = "";
-            for(var i = 0; i < data.length; i++) {
+            // TODO: Take the data from inventory.json and append it to the products table
+            //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+            //             its contents and fields
+            //       HINT: You will want to target #insertProducts for your new HTML elements
+            request.done(function (data) {
+                var html = "";
+                for (var i = 0; i < data.length; i++) {
 
-                html += "<tr>";
-                html += "<td>" + data[i].title + "</td>";
-                html += "<td>" + data[i].price + "</td>";
-                html += "<td>" + data[i].quantity + "</td>";
-                html += "<td>" + data[i].categories + "</td>";
-                html += "</tr>";
+                    html += "<tr>";
+                    html += "<td>" + data[i].title + "</td>";
+                    html += "<td>" + data[i].quantity + "</td>";
+                    html += "<td>" + data[i].price + "</td>";
+                    html += "<td>" + data[i].categories + "</td>";
+                    html += "</tr>";
 
 
-            }
-            $("#insertProducts").html(html);
+                }
+                $("#insertProducts").html(html);
+            });
+        }
+
+
+        refreshInventory();
+
+        $("#refresh").click(function (){
+            refreshInventory();
         })
+
+
 
     })();
 </script>
