@@ -30,15 +30,52 @@
         zoom: 9 // starting zoom
     });
 
-    var marker = new mapboxgl.Marker()
-        .setLngLat([-98.708855, 29.490434])
-        .setPopup(new mapboxgl.Popup().setHTML("<h2>Yum Thia!</h2>"))
-        .addTo(map);
+    // var marker = new mapboxgl.Marker()
+    //     .setLngLat([-98.708855, 29.490434])
+    //     .setPopup(new mapboxgl.Popup().setHTML("<h2>Yum Thia!</h2>"))
+    //     .addTo(map);
+    //
+    // var marker2 = new mapboxgl.Marker()
+    // .setLngLat([-98.69406, 29.43543])
+    // .setPopup(new mapboxgl.Popup().setHTML("<h2>Chick-fil-A</h2>"))
+    // .addTo(map);
+    //
+    //
+    // var marker3 = new mapboxgl.Marker()
+    //     .setLngLat([-98.651406, 29.417449])
+    //     .setPopup(new mapboxgl.Popup().setHTML("<h2>WhataBurger</h2><p>8214 Marbach Rd, San Antonio, TX 78227</p>"))
+    //     .addTo(map);
 
-    var marker2 = new mapboxgl.Marker()
-    .setLngLat([-98.69406, 29.43543])
-    .setPopup(new mapboxgl.Popup().setHTML("<h2>Chick-fil-A</h2>"))
-    .addTo(map);
+    var restaurantArr = [
+        {
+            name: "Yum Thia",
+            address: "5511 W Loop 1604 N, San Antonio, TX 78253",
+            coordinates: [-98.708855, 29.490434],
+
+        },
+        {
+            name: "Chick-fil-A",
+            address: "10634 Potranco Rd, San Antonio, TX 78251",
+            coordinates: [-98.69406, 29.43543]
+        },
+        {
+            name: "Whataburger",
+            address: "8214 Marbach Rd, San Antonio, TX 78227",
+            coordinates: [-98.651406, 29.417449]
+        }
+        ];
+
+    restaurantArr.forEach(function (arr,index){
+          new mapboxgl.Marker()
+        .setLngLat(arr.coordinates)
+              .setPopup(new mapboxgl.Popup().setHTML("<h2>" + arr.name + "</h2>" + "<p>" + arr.address + "</p>"))
+              .addTo(map)
+    })
+
+    // var marker3 = new mapboxgl.Marker()
+    // .setLngLat([ -98.65, 29.44])
+    // .sePopup(new mapboxgl.Popup().setHTML("<h2>WhataBurger</h2>"))
+    // .addTo(map);
 
     // var popUp = new mapboxgl.Popup.on("open").setLngLat([-98.708855, 29.490434]).setHTML("<h2>Yum Thia!</h2>").addTo(map);
 
@@ -52,9 +89,9 @@
     //         })
     //     })
 
-    console.log(geocode("10634 Potranco Rd, San Antonio, TX 78251",mapBoxToken).then(function (result){
-        console.log(result);
-    }));
+    // console.log(geocode(" 8214 Marbach Rd, San Antonio, TX 78227",mapBoxToken).then(function (result){
+    //     console.log(result);
+    // }));
 </script>
 </body>
 </html>
