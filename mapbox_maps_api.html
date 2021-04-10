@@ -32,9 +32,18 @@
 
     var marker = new mapboxgl.Marker()
         .setLngLat([-98.708855, 29.490434])
+        .setPopup(new mapboxgl.Popup().setHTML("<h2>Yum Thia!</h2>"))
         .addTo(map);
 
-    var popUp = new mapboxgl.Popup().setLngLat([-98.708855, 29.490434]).setHTML("<p>Yum Thia!</p>").addTo(map)
+    var marker2 = new mapboxgl.Marker()
+    .setLngLat([-98.69406, 29.43543])
+    .setPopup(new mapboxgl.Popup().setHTML("<h2>Chick-fil-A</h2>"))
+    .addTo(map);
+
+    // var popUp = new mapboxgl.Popup.on("open").setLngLat([-98.708855, 29.490434]).setHTML("<h2>Yum Thia!</h2>").addTo(map);
+
+
+
     // var input = document.getElementById("text-input");
     //
     //     input.addEventListener("keyup",function (){
@@ -43,9 +52,9 @@
     //         })
     //     })
 
-    // console.log(geocode("5511 W Loop 1604 N, San Antonio, TX 78253",mapBoxToken).then(function (result){
-    //     console.log(result);
-    // }));;
+    console.log(geocode("10634 Potranco Rd, San Antonio, TX 78251",mapBoxToken).then(function (result){
+        console.log(result);
+    }));
 </script>
 </body>
 </html>
