@@ -14,18 +14,38 @@
 
 <div id='map' style='width: 400px; height: 300px;'></div>
 
+<div id="text">
+    <input type="text" id="text-input">
+</div>
+
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script>
     mapboxgl.accessToken = mapBoxToken;
+
     var map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
+        center: [-98.4916, 29.4252], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
 
-    var marker = new mapboxgl.Marker().setLngLat([]).addTo(map)
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-98.708855, 29.490434])
+        .addTo(map);
+
+    var popUp = new mapboxgl.Popup().setLngLat([-98.708855, 29.490434]).setHTML("<p>Yum Thia!</p>").addTo(map)
+    // var input = document.getElementById("text-input");
+    //
+    //     input.addEventListener("keyup",function (){
+    //         geocode("",mapBoxToken).then(function (result){
+    //
+    //         })
+    //     })
+
+    // console.log(geocode("5511 W Loop 1604 N, San Antonio, TX 78253",mapBoxToken).then(function (result){
+    //     console.log(result);
+    // }));;
 </script>
 </body>
 </html>
