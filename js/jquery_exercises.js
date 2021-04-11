@@ -24,6 +24,12 @@ $("li").css({"list-style": "none", "font-size" : "20px"});
 //
 // $("h1").click(clickHandler);
 
+function changeHeader(e){
+    $(this).html("<h6>Yo Zombies!</h6>");
+}
+
+$("h1").click(changeHeader).css("color", "orange");
+
 
 // ********************** defining functions ***************************
 
