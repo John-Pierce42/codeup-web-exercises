@@ -20,10 +20,30 @@
         if(keypress.length > 11) {
             keypress.shift();
         }
-        if(keypress === konamiCode) {
-            $("body").html("you have 30 lives!");
+        if(konamiCode.toString().toLowerCase() === keypress.toString().toLowerCase()) {
+            $("body").html("<h1>you have 30 lives!</h1>").css("background-image", "url('img/maxresdefault.jpg')" ).css("background-repeat", "no-repeat").css("background-size", "100%");
         }
+        console.log(keypress);
     });
+
+//    ******************* Douglas's Konami code **********************
+
+    // var konamiCodeKeys = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"];
+    //
+    // var keysPressed = [];
+    //
+    // $(document).keyup(function(event){
+    //     //console.log(event.key);
+    //     keysPressed.push(event.key);
+    //     if(keysPressed.length > 11) {
+    //         keysPressed.shift();
+    //     }
+    //     if(konamiCodeKeys.toString().toLowerCase() === keysPressed.toString().toLowerCase()) {
+    //         $("body").html("You get 30 lives. Now go code some more!");
+    //     }
+    //     console.log(keysPressed);
+    // });
+
 </script>
 </body>
 </html>
