@@ -9,7 +9,7 @@
 //
 // });
 $("body").css("margin", "20px 100px 20px 100px");
-$("body").css({"background-image": "url( img/yohann-libot-f7NnOkM1yeU-unsplash.jpg)", "background-size" : "100% 100%", " background-repeat":"no-repeat", });
+$("body").css("background-image","url( img/yohann-libot-f7NnOkM1yeU-unsplash.jpg)").css("background-size", "100%").css("background-repeat", "no-repeat");
 $("#header").css("text-align", "center");
 $(".codeup").css("text-align", "center");
 $("li").css({"list-style": "none", "font-size" : "20px"});
@@ -48,6 +48,16 @@ function hoverOut(e){
 };
 
 $("li").hover(hover, hoverOut);
+
+
+$("h1").hover(function (e){
+    $(this).css("color", "red");
+}, function (e){
+    $(this).css("color", "green");
+})
+
+$("p").mouseenter(hover);
+$("p").mouseleave(hoverOut);
 
 // ******************************** out side of a function ******************
 // $("h1").click(function (e){
