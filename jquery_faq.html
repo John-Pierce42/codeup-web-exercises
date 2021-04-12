@@ -7,66 +7,80 @@
         .invisible {
             visibility: hidden;
         }
+
+        .highlight {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
 <h1>10 FAQs about national parks</h1>
 <dl>
-    <dt>FaQ #1</dt>
-    <dd class="invisible">
+    <dt id="btn">FaQ #1</dt>
+    <dd class="invisible highlight">
         The second national park created (Yellowstone was the first) is a national park no longer. Mackinac National Park was established in 1875, but returned to the state of Michigan just 20 years later in 1895. It’s now designated as a state park.
     </dd>
     <br>
     <dt>FaQ #2</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         Our nation’s largest national park is Wrangell-St. Elias National Park in Alaska. The park covers 13,000 square miles. On the opposite side of the spectrum, Arkansas’ Hot Springs National Park is the smallest at 5,500 acres. It’s was also the first federally protected piece of land in 1832 yet wasn’t named a national park until 1921.
     </dd>
     <br>
     <dt>FaQ #3</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         While you might think Yellowstone tops the list, Great Smoky Mountains National Park hosts the most visitors each year. More than 9 million guests visit the park annually.
     </dd>
     <br>
     <dt>FaQ #4</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         What’s the difference between a national park and national monument? Often confused, national parks are selected for their natural beauty, unique geology and unusual ecosystems. National monuments, on the other hand, are chosen for historical or archeological significance.
     </dd>
     <br>
     <dt>FaQ #5</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         Presidents Abraham Lincoln and Teddy Roosevelt have the most sites in the system named for them at four apiece.
     </dd>
     <br>
     <dt>FaQ #6</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         Only one state is home to neither a national park or a national monument. Believe it or not, it’s actually the country’s first state – Delaware.
     </dd>
     <br>
     <dt>FaQ #7</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         There is actually an NPS site south of the equator: the National Park of Samoa. This national park covers 13,500 total acres and nearly 4,000 acres protect coral reefs.
     </dd>
     <br>
     <dt>FaQ #8</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         The lower 48 states’ largest park, Death Valley National Park, also boasts being home to the lowest point in the western hemisphere; Badwater Basin is 282 feet below sea level.
     </dd>
     <br>
     <dt>FaQ #9</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         That NPS emblem includes: a sequoia tree and bison to represent vegetation and wildlife, mountains and water to represent recreational values, and an arrowhead to represent historical and archaeological values.
     </dd>
     <br>
     <dt>FaQ #10</dt>
-    <dd class="invisible">
+    <dd class="invisible highlight">
         The National Park Service employs 20,000 people annually. In addition, these employees are assisted by 246,00 Volunteers-In-Parks (VIPs) who donate about 6.7 million hours each year.
     </dd>
 </dl>
-<script>
-    $(".invisible").click(function (e){
-        $(".invisible").toggleClass(".invisible")
-    })
-</script>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+
+    $("dt").click(function (e){
+        $("dd").toggleClass("invisible");
+
+         });
+
+        $("dt").click(function (){
+            $("dt").addClass("highlight")
+        });
+
+    $("h1").css("color", "red");
+</script>
+
 </body>
 </html>
