@@ -65,7 +65,7 @@
         }
         ];
 
-    restaurantArr.forEach(function (arr,index){
+    restaurantArr.forEach(function (arr,){
           new mapboxgl.Marker()
         .setLngLat(arr.coordinates)
               .setPopup(new mapboxgl.Popup().setHTML("<h2>" + arr.name + "</h2>" + "<p>" + arr.address + "</p>"))
