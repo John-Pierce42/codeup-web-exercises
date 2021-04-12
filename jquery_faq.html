@@ -8,25 +8,49 @@
             visibility: hidden;
         }
 
-        .highlight {
-            background-color: yellow;
-        }
+        /*.highlight {*/
+        /*    background-color: yellow;*/
+        /*}*/
     </style>
 </head>
 <body>
 <h1>10 FAQs about national parks</h1>
+
+<button id="btn">Highlight</button>
+
 <dl>
-    <dt id="btn">FaQ #1</dt>
+    <dt>FaQ #1</dt>
+    <h3>park Name</h3>
+    <ul>
+        <li>Fact 1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+    </ul>
     <dd class="invisible highlight">
         The second national park created (Yellowstone was the first) is a national park no longer. Mackinac National Park was established in 1875, but returned to the state of Michigan just 20 years later in 1895. It’s now designated as a state park.
     </dd>
     <br>
     <dt>FaQ #2</dt>
+    <h3>park Name</h3>
+    <ul>
+        <li>Fact 1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+    </ul>
     <dd class="invisible highlight">
         Our nation’s largest national park is Wrangell-St. Elias National Park in Alaska. The park covers 13,000 square miles. On the opposite side of the spectrum, Arkansas’ Hot Springs National Park is the smallest at 5,500 acres. It’s was also the first federally protected piece of land in 1832 yet wasn’t named a national park until 1921.
     </dd>
     <br>
     <dt>FaQ #3</dt>
+    <h3>park Name</h3>
+    <ul>
+        <li>Fact 1</li>
+        <li>Fact 2</li>
+        <li>Fact 3</li>
+        <li>Fact 4</li>
+    </ul>
     <dd class="invisible highlight">
         While you might think Yellowstone tops the list, Great Smoky Mountains National Park hosts the most visitors each year. More than 9 million guests visit the park annually.
     </dd>
@@ -75,11 +99,19 @@
 
          });
 
-        $("dt").click(function (){
-            $("dt").addClass("highlight")
-        });
+    $("#btn").click(function (){
+        $("ul").children().css("background-color", "yellow");
+    })
 
-    $("h1").css("color", "red");
+    $("h3").click(function (){
+        $("ul").children().css("font-weight", "bold")
+    })
+
+    $("li").click(function (){
+        $("ul").children().first().css("color", "blue");
+
+    })
+
 </script>
 
 </body>
