@@ -1,53 +1,20 @@
-(function () {
+
     "use strict"
 
-    mapboxgl.accessToken = mapBoxToken;
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
-        zoom: 10,
-        center: [-98.4916, 29.4252]
-    });
 
 
-    $(document).ready(function () {
-        //
-        // $.get("https://api.openweathermap.org/data/2.5/weather", {
+
+
+        // $.get("https://api.openweathermap.org/data/2.5/forecast", {
         //     appid: OPEN_WEATHER_APPID,
-        //     // q: "San Antonio, US",
         //     lat: 29.423017,
         //     lon: -98.48527,
         //     units: "imperial"
         // }).done(function (data){
-        //
-        //      var html = "<p>" + data.name + "</p>";
-        //      html+= "<p>" + data.weather[0].description + "</p>"
-        //
-        //     console.log(data);
-        //
-        //    $("#conditions").html(html);
-        //
-        //
-        //     });
+        //     console.log(data)
+        // });
 
-//
-//     $.get("https://api.openweathermap.org/data/2.5/weather", {
-//         appid: OPEN_WEATHER_APPID,
-//         // q: "San Antonio, US",
-//         lat: 29.423017,
-//         lon: -98.48527,
-//         units: "imperial"
-//     }).done(function (data){
-//
-//          var html = "<p>" + data.dt + "</p>";
-//          html += "<p>" + data + "</p>"
-//
-//         console.log(data);
-//
-//        $(".card-header").html(html);
-//
-//
-//         });
+
 
 
         $.get("https://api.openweathermap.org/data/2.5/onecall", {
@@ -87,9 +54,23 @@
 
             $(".row").html(html);
 
+
         });
 
+        // $.get("http://openweathermap.org/img/w/[icon].png"), {
+        //     appid: OPEN_WEATHER_APPID
+        // }
+
+
+    mapboxgl.accessToken = mapBoxToken;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
     });
 
-
-})()
+    var marker = new mapboxgl.Marker({draggable: true})
+    .setLngLat([-98.4916, 29.4252])
+    .setPopup()
+    .addTo(map);
