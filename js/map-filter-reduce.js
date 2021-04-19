@@ -37,15 +37,15 @@ const users = [
 ];
 
  //***********************************************
- let languages3 = users.filter(function (languages){
-     return languages.languages.length > 2;
+ let languages3 = users.filter(function (user){
+     return user.languages.length > 2;
  })
 
 console.log(languages3);
 
  //**********************************************
- let emailArr = users.map(function (emails){
-     return emails.email
+ let emailArr = users.map(function (user){
+     return user.email
  });
 
 console.log(emailArr);
@@ -66,26 +66,35 @@ let averageYearsOfExp = users.reduce(function (total,num){
 console.log(`Their total number years of exp are: ${yearsOfExp}!`);
 console.log(`Their total average years of exp are: ${averageYearsOfExp}!`);
 
+//****************************************************************************
 
-// let longestEmail = users.reduce(function (user,email){
-//         if(user.email.length > email.email.length){
-//             return user.email
-//         }
-// }, "")
-//
-// console.log(longestEmail);
+let longestEmail = users.reduce(function (longestEmail,user){
 
-
-//************ stack overFlow ************
-let longestEmail = users.reduce(function (a,b){
-
-        return a.length > b.length ? a : b;
-},"");
+    if(user.email.length > longestEmail.length){
+        longestEmail = user.email
+    }
+    return longestEmail
+}, "")
 
 console.log(longestEmail);
 
- // *******************************************
-  let usersNameInString =  users.reduce(function (obj,ele){
+//************ stack overFlow ************
+// let longestEmail = users.reduce(function (a,b){
+//
+//         return a.length > b.length ? a : b;
+// },"");
 
+// console.log(longestEmail);
 
-}, "")
+ // ***********************************************************************
+  let usersNameInString =  users.reduce(function (accumulator,user){
+
+return `${accumulator} ${user.name},`;
+}, "instructor are: ").slice(0, -1) + ".";
+
+console.log(usersNameInString);
+
+//****************************** second solution
+
+let mapJoinSolution = `instructors are: ${users.map(user => user.name).join(", ")}.`;
+console.log(mapJoinSolution);
