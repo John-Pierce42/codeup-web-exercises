@@ -35,15 +35,15 @@
   const dreamApiURL = "https://watery-hammerhead-bay.glitch.me/dreams";
   // const route = "/dreams";
 
-  // let dream = {"dream": "xrp to go to the Moon!"}
-  //
-  // let options = {
-  //   method: "POST",
-  //   header: {
-  //     "content-type": "application/json"
-  //   },
-  //   body: JSON.stringify(dream)
-  // };
+  let dream = {"dream": "xrp to go to the Moon!"}
+
+  let options = {
+    method: "POST",
+    header: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(dream)
+  };
 
   fetch(dreamApiURL,options).then(function (response){
     console.log(response);
