@@ -12,39 +12,46 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet"/>
 
+    <style>
+        body {
+            background-color: lightblue;
+
+        }
+    </style>
+
 
     <title>John Weather Map App</title>
 </head>
 <body>
-
+<div class="d-flex justify-content-evenly p-3" style="background-color: darkblue; color: antiquewhite">
 <header>
     <div class="text-center mt-2">
         <h1>Johns' Weather Map App</h1>
     </div>
 </header>
 
-<div class="d-flex justify-content-center mt-2">
+
     <form class="form-inline">
         <div class="form-group mb-2">
             <label for="staticEmail2" class="sr-only"></label>
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Places">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2">
         </div>
         <div class="form-group mx-sm-3 mb-2">
             <label for="inputPassword2" class="sr-only"></label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Places">
         </div>
         <button type="submit" class="btn btn-primary mb-2">Find</button>
     </form>
 </div>
 
-<div class="container">
+<div class="container" style="background-color:lightblue;">
     <div class="row justify-content-even">
 
     </div>
 </div>
 
 
-<div id='map' style='width: 1000px; height: 400px;'>
+<div id='map'  class="map" style='width: 1000px; height: 400px; border: 2px solid darkblue; border-radius: 25px; margin-left: 100px;'>
 
 </div>
 <pre id="coordinates" class="coordinates"></pre>
