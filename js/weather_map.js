@@ -34,8 +34,8 @@ function oneCall(lng, lat) {
             var dateObject = new Date(mill);
             var date = dateObject.toLocaleDateString();
 
-            html += "<div class='card mx-5 my-3' style='width: 10rem'>"
-            html += "<div class='card-header'>"
+            html += "<div class='card m-3' style='width: 12rem'>"
+            html += "<div class='card-header' style='background-color: darkblue; color:white;'>"
             html += "<p>" + date + "</p>"
             html += "</div>"
             html += "<div class='card-body'>"
