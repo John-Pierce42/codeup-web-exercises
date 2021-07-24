@@ -61,18 +61,25 @@ function oneCall(lng, lat) {
         // }
 
     var weatherIcons = [
-        {pic:"animated/day.svg", name:"clear-day"},
-        {pic:"animated/night.svg", name:"clear-night"},
-        {pic:"animated/rainy-1.svg", name:"rain"},
-        {pic:"animated/snowy-1.svg", name:"snow"},
-        {pic:"animated/snowy-1.svg", name:"sleet"},
-        {pic:"animated/weather.svg", name:"wind"},
-        {pic:"animated/weather.svg", name:"fog"},
-        {pic:"animated/cloudy-day-3.svg", name:"cloudy"},
-        {pic:"animated/cloudy-day-3.svg", name:"partly-cloudy-day"},
-        {pic:"animated/cloudy-day-3.svg", name:"partly-cloudy-day"},
+        {pic: "animated/day.svg", name: "clear-day"},
+        {pic: "animated/night.svg", name: "clear-night"},
+        {pic: "animated/rainy-1.svg", name: "rain"},
+        {pic: "animated/snowy-1.svg", name: "snow"},
+        {pic: "animated/snowy-1.svg", name: "sleet"},
+        {pic: "animated/weather.svg", name: "wind"},
+        {pic: "animated/weather.svg", name: "fog"},
+        {pic: "animated/cloudy-day-3.svg", name: "cloudy"},
+        {pic: "animated/cloudy-day-3.svg", name: "partly-cloudy-day"},
+        {pic: "animated/cloudy-day-3.svg", name: "partly-cloudy-day"},
     ]
 
+    function icon(weatherIcons, anIcon) {
+        for (var i = 0; i < weatherIcons.length; i++) {
+            if (weatherIcons[i].name === anIcon) {
+                return weatherIcons[i].pic;
+            }
+        }
+    }
 
 
     mapboxgl.accessToken = mapBoxToken;
