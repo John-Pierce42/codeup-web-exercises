@@ -60,6 +60,20 @@ function oneCall(lng, lat) {
         //     appid: OPEN_WEATHER_APPID
         // }
 
+    var weatherIcons = [
+        {pic:"animated/day.svg", name:"clear-day"},
+        {pic:"animated/night.svg", name:"clear-night"},
+        {pic:"animated/rainy-1.svg", name:"rain"},
+        {pic:"animated/snowy-1.svg", name:"snow"},
+        {pic:"animated/snowy-1.svg", name:"sleet"},
+        {pic:"animated/weather.svg", name:"wind"},
+        {pic:"animated/weather.svg", name:"fog"},
+        {pic:"animated/cloudy-day-3.svg", name:"cloudy"},
+        {pic:"animated/cloudy-day-3.svg", name:"partly-cloudy-day"},
+        {pic:"animated/cloudy-day-3.svg", name:"partly-cloudy-day"},
+    ]
+
+
 
     mapboxgl.accessToken = mapBoxToken;
 
